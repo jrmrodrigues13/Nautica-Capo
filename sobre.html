@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+ 
+        <title>Sobre</title>
+ 
+        <!-- arquivo CSS do Bootstrap -->
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+ 
+ 
+        <!-- jQuery -->
+        <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+ 
+        <!-- Bootstrap js -->
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ 
+        <!-- Estilo para o Carousel -->
+        <link href="bootstrap-3.3.7-dist/css/carousel.css" rel="stylesheet">
+ 
+        <!-- Estilo para o Carousel -->
+        <link href="bootstrap-3.3.7-dist/css/estilo.css" rel="stylesheet">
+ 
+        <script type="text/javascript">
+            $(document).ready(function ()
+            {
+                $("#contato").click(function () {
+                    $('#modalContato').modal('show');
+                });
+            });
+ 
+        </script>
+    </head>
+ 
+    <body>
+ 
+        <!-- barra de navegação fixa -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+ 
+            <!-- container do menu -->
+            <div class="container">
+ 
+                <!-- cabeçalho do menu -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+ 
+                </div>
+ 
+                <!-- barra de links  -->
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#" id="contato">Fale Conosco</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                               role="button">Links Úteis <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Educação</li>
+                                <li><a href="http://www.uninove.br">Uninove</a></li>
+                                <li><a href="www.periodicos.capes.gov.br/">Portal CAPES</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Notícias</li>
+                                <li><a href="http://www.uol.com.br">UOL</a></li>
+                                <li><a href="http://www.terra.com.br">Terra</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <!-- inicio da sessão com o texto inicial da página -->
+        <section id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> <!-- divisão em 12 colunas -->
+                        <div class="caption">
+                            <h1>SOBRE</h1>
+                        </div>
+                        <p>
+                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. 
+                            Nullam varius, turpis et commodo pharetra, est eros bibendum 
+                            elit, nec luctus magna felis sollicitudin mauris. Integer in 
+                            mauris eu nibh euismod gravida. Duis ac tellus et risus 
+                            vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. 
+                            Ut ullamcorper, ligula eu tempor congue, eros est euismod 
+                            turpis, id tincidunt sapien risus a quam. Maecenas fermentum 
+                            consequat mi. Donec fermentum.
+                        </p>         
+        </section> <!-- /sobre -->
+        <!-- aqui é o rodapé da página  -->
+        <footer id="footer">
+            <div class="container">
+                <br>
+                <div class="col-md-8">
+                    <p>© 2017 Nome da Empresa Ltda. · 
+                        <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="pull-right"><a href="index.html">Voltar para Home</a></p>
+                </div>
+            </div>
+        </footer>
+ 
+        <!-- Modal Fale Conosco -->
+        <div id="modalContato" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title text-center"><strong>Fale Conosco</strong></h1>
+                    </div>
+                    <div class="modal-body">
+                        <form name="fale" class="form-horizontal" action="" method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="inputNome" class="col-lg-2 control-label">Assunto</label>
+                                    <div class="col-lg-10">
+                                        <select class="form-control" id="inputAssunto" name="assunto">
+                                            <option disabled selected>Selecione um assunto</option>
+                                            <option>Dúvidas Gerais</option>
+                                            <option>Comercial</option>
+                                            <option>Financeiro</option>
+                                            <option>Diretoria</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                                <div class="form-group">
+                                    <label for="inputNome" class="col-lg-2 control-label">Nome</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputNome" 
+                                               name="nome" placeholder="informe seu nome">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-lg-2 control-label">E-mail</label>
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputEmail" 
+                                               name="email" placeholder="Informe seu e-mail">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-6 col-lg-offset-2">
+                                        <button type="button" class="btn btn-primary" 
+                                                data-dismiss="modal">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>        
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

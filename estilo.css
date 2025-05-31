@@ -1,0 +1,35 @@
+#sobre {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 22px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+ 
+/* Classe para alinhar a foto com o parágrafo e colocar uma borda preta */
+.foto-destaque{
+    margin-top: 11px;
+    border: solid 4px #000;
+}
+ 
+/* coloca um fundo no painel com os logotipos */
+.fundo {
+    padding: 20px;
+    background-color: #f8f8ff;
+}
+ 
+/* Coloca um retangula azul no rodapé */
+.destaque-painel {
+    background: #02bdd5;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+ 
+/* Configura a largura do formulário de contato */
+#modalContato .modal-dialog {
+    width: 450px;
+}
